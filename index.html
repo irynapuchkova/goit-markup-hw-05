@@ -63,7 +63,10 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hero-btn btn">Заказать услугу</button>
+
+          <button data-toggle-backdrop-order class="hero-btn btn">
+            Заказать услугу
+          </button>
         </section>
       </div>
 
@@ -139,12 +142,15 @@
           <ul class="activity items">
             <li class="unit">
               <img src="images/box_1.jpg" alt="Web-site" width="370" />
+              <p class="activity-label">Десктопные приложения</p>
             </li>
             <li class="unit">
               <img src="images/box_2.jpg" alt="Apps" width="370" />
+              <p class="activity-label">Мобильные приложения</p>
             </li>
             <li class="unit">
               <img src="images/box_3.jpg" alt="Design" width="370" />
+              <p class="activity-label">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -445,5 +451,17 @@
         </div>
       </div>
     </footer>
+
+    <div data-backdrop-order class="backdrop-order is-hidden">
+      <div class="modal-order">
+        <button class="btn-close" data-toggle-backdrop-order>
+          <svg class="icon-close" width="11" height="11">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
   </body>
 </html>
